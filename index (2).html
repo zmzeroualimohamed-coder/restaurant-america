@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1311">
+  <meta name="description" content="Restaurant Amèrica: cocina mediterránea y especialidad sin gluten en Fenals, Lloret de Mar. Una tradición familiar desde 1981.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Restaurant Amèrica | Mediterráneo con historia">
+  <meta property="og:description" content="Cocina mediterránea y especialidad sin gluten en Fenals, Lloret de Mar. Desde 1981.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+  <link rel="canonical" href="https://restaurantamericalloret.com/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='50' fill='%230B1311'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='62' fill='%23D9BB91' font-family='Georgia,serif'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1100&amp;q=85">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+
+  <title>Restaurant Amèrica | Cocina mediterránea y sin gluten en Fenals</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0B1311",
+            forest: "#17221D",
+            cream: "#F4F1EA",
+            muted: "#B8B8AB",
+            clay: "#C78361",
+            brass: "#D9BB91"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            display: ["Playfair Display", "Georgia", "serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #0B1311;
+      --cream: #F4F1EA;
+      --brass: #D9BB91;
+      --clay: #C78361;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 6rem;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ink);
+      color: var(--cream);
+      font-family: "Inter", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+      background: rgba(199, 131, 97, 0.42);
+      color: var(--cream);
+    }
+
+    a,
+    button {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--brass);
+      outline-offset: 4px;
+    }
+
+    .font-display {
+      font-family: "Playfair Display", Georgia, serif;
+    }
+
+    .site-header {
+      background: rgba(11, 19, 17, 0.88);
+      border-color: rgba(244, 241, 234, 0.1);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      transition: background-color 220ms ease, box-shadow 220ms ease;
+    }
+
+    .site-header.is-scrolled {
+      background: rgba(11, 19, 17, 0.96);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.16);
+    }
+
+    .hero-glow {
+      background:
+        radial-gradient(ellipse at 13% 26%, rgba(199, 131, 97, 0.12), transparent 34%),
+        radial-gradient(ellipse at 81% 34%, rgba(217, 187, 145, 0.09), transparent 32%);
+    }
+
+    .hero-visual {
+      border-radius: 48% 48% 24px 24px / 36% 36% 24px 24px;
+      isolation: isolate;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(11, 19, 17, 0.02) 36%, rgba(11, 19, 17, 0.62) 100%);
+      pointer-events: none;
+    }
+
+    .glass-panel {
+      border: 1px solid rgba(244, 241, 234, 0.18);
+      background: rgba(14, 23, 19, 0.73);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .since-stamp {
+      background: rgba(11, 19, 17, 0.88);
+      border: 1px solid rgba(217, 187, 145, 0.58);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .soft-card {
+      border: 1px solid rgba(244, 241, 234, 0.09);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+    }
+
+    .menu-tab {
+      border: 1px solid rgba(244, 241, 234, 0.13);
+      color: rgba(244, 241, 234, 0.72);
+      transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+    }
+
+    .menu-tab[aria-selected="true"] {
+      color: var(--ink);
+      background: var(--brass);
+      border-color: var(--brass);
+    }
+
+    .menu-panel[hidden] {
+      display: none !important;
+    }
+
+    .menu-card img {
+      transition: transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .menu-card:hover img {
+      transform: scale(1.045);
+    }
+
+    .contact-map {
+      background-color: #15201B;
+      background-image:
+        linear-gradient(rgba(244, 241, 234, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244, 241, 234, 0.035) 1px, transparent 1px),
+        radial-gradient(ellipse at 50% 55%, rgba(199, 131, 97, 0.16), transparent 60%);
+      background-size: 46px 46px, 46px 46px, auto;
+    }
+
+    .map-path {
+      stroke: rgba(217, 187, 145, 0.24);
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+    }
+
+    .mobile-quick-actions {
+      padding-bottom: env(safe-area-inset-bottom, 0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Restaurant Amèrica",
+    "url": "https://restaurantamericalloret.com/",
+    "telephone": "+34972366417",
+    "email": "info@restaurantamericalloret.com",
+    "foundingDate": "1981",
+    "servesCuisine": "Mediterranean",
+    "acceptsReservations": true,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. America, 32",
+      "addressLocality": "Lloret de Mar",
+      "addressRegion": "Girona",
+      "postalCode": "17310",
+      "addressCountry": "ES"
+    },
+    "sameAs": [
+      "https://www.instagram.com/restaurant.america/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a href="#contenido" class="sr-only fixed left-4 top-4 z-[100] rounded-lg bg-cream px-4 py-3 font-semibold text-ink focus:not-sr-only">
+    Saltar al contenido
+  </a>
+
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50 border-b">
+    <div class="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
+      <a href="#inicio" class="group flex items-center gap-3" aria-label="Restaurant Amèrica, inicio">
+        <span class="grid h-11 w-11 place-items-center rounded-full border border-brass/40 bg-brass/10 font-display text-2xl italic text-brass transition group-hover:bg-brass/15" aria-hidden="true">A</span>
+        <span class="block">
+          <span class="block font-display text-[17px] leading-tight tracking-[0.01em] text-cream sm:text-lg">Restaurant <span class="italic text-brass">Amèrica</span></span>
+          <span class="mt-1 block text-[9px] font-semibold tracking-[0.2em] text-cream/50">FENALS · LLORET DE MAR</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-7 md:flex" aria-label="Navegación principal">
+        <a href="#menu" class="text-sm text-cream/70 transition hover:text-brass">Carta</a>
+        <a href="#sin-gluten" class="text-sm text-cream/70 transition hover:text-brass">Sin gluten</a>
+        <a href="#historia" class="text-sm text-cream/70 transition hover:text-brass">Desde 1981</a>
+        <a href="#contacto" class="text-sm text-cream/70 transition hover:text-brass">Contacto</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:+34972366417" class="hidden items-center gap-2 rounded-full bg-brass px-5 py-3 text-sm font-semibold text-ink transition hover:bg-cream sm:inline-flex">
+          <span>Reservar mesa</span>
+          <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
+        </a>
+        <button id="menu-toggle" type="button" class="grid h-11 w-11 place-items-center rounded-full border border-white/15 text-cream transition hover:border-brass/60 hover:text-brass md:hidden" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
+          <i data-lucide="menu" class="menu-open-icon h-5 w-5" aria-hidden="true"></i>
+          <i data-lucide="x" class="menu-close-icon hidden h-5 w-5" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="hidden border-t border-white/10 bg-ink/95 px-5 pb-5 pt-3 backdrop-blur-xl md:hidden" aria-label="Navegación móvil">
+      <div class="mx-auto grid max-w-7xl gap-1 sm:px-3">
+        <a href="#menu" class="rounded-xl px-4 py-3 text-sm text-cream/80 transition hover:bg-white/5 hover:text-brass">Carta</a>
+        <a href="#sin-gluten" class="rounded-xl px-4 py-3 text-sm text-cream/80 transition hover:bg-white/5 hover:text-brass">Especialidad sin gluten</a>
+        <a href="#historia" class="rounded-xl px-4 py-3 text-sm text-cream/80 transition hover:bg-white/5 hover:text-brass">Nuestra historia</a>
+        <a href="#contacto" class="rounded-xl px-4 py-3 text-sm text-cream/80 transition hover:bg-white/5 hover:text-brass">Contacto y ubicación</a>
+        <a href="tel:+34972366417" class="mt-2 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-brass px-5 py-3 text-sm font-semibold text-ink">
+          <i data-lucide="phone" class="h-4 w-4" aria-hidden="true"></i>
+          Reservar mesa
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero-glow relative isolate overflow-hidden pb-20 pt-32 sm:pb-24 sm:pt-36 lg:pb-28 lg:pt-40">
+      <div class="pointer-events-none absolute -right-48 top-20 -z-10 h-[32rem] w-[32rem] rounded-full border border-brass/10"></div>
+      <div class="pointer-events-none absolute -right-32 top-36 -z-10 h-[23rem] w-[23rem] rounded-full border border-brass/10"></div>
+
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[1fr_0.92fr] lg:gap-16 lg:px-10">
+        <div class="relative z-10 max-w-2xl">
+          <div class="mb-7 inline-flex items-center gap-3 rounded-full border border-brass/25 bg-brass/[0.06] px-4 py-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-clay shadow-[0_0_12px_rgba(199,131,97,0.8)]" aria-hidden="true"></span>
+            <span class="text-[10px] font-semibold uppercase tracking-[0.22em] text-brass">Costa Brava · Fenals</span>
+          </div>
+
+          <h1 class="font-display text-[clamp(3.35rem,8vw,6.45rem)] leading-[0.98] tracking-[-0.045em] text-cream">
+            El sabor del
+            <span class="mt-1 block italic text-brass">Mediterráneo.</span>
+          </h1>
+
+          <p class="mt-7 max-w-xl text-base leading-8 text-cream/70 sm:text-lg">
+            Una mesa familiar en Fenals, una cocina para disfrutar con calma y una especialidad sin gluten cuidada desde 1981.
+          </p>
+
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="tel:+34972366417" class="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-clay px-7 py-4 text-sm font-semibold text-ink transition hover:bg-[#d39470]">
+              <i data-lucide="phone" class="h-4 w-4" aria-hidden="true"></i>
+              Llamar para reservar
+              <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
+            </a>
+            <a href="#menu" class="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-cream/20 px-7 py-4 text-sm font-semibold text-cream transition hover:border-brass/70 hover:bg-white/[0.04]">
+              Explorar la carta
+              <i data-lucide="arrow-down" class="h-4 w-4 text-brass" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-cream/55">
+            <span class="inline-flex items-center gap-2">
+              <i data-lucide="utensils" class="h-4 w-4 text-brass" aria-hidden="true"></i>
+              Cocina mediterránea
+            </span>
+            <span class="hidden h-1 w-1 rounded-full bg-cream/25 sm:block" aria-hidden="true"></span>
+            <span class="inline-flex items-center gap-2">
+              <i data-lucide="shield-check" class="h-4 w-4 text-brass" aria-hidden="true"></i>
+              Especialidad sin gluten
+            </span>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-[550px] lg:ml-auto">
+          <div class="hero-visual relative h-[440px] overflow-hidden border border-white/10 bg-forest sm:h-[550px]">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+              alt="Mesa preparada para una experiencia gastronómica mediterránea"
+              class="absolute inset-0 h-full w-full object-cover object-center"
+              width="1100"
+              height="1400"
+              fetchpriority="high"
+              decoding="async"
+            >
+            <div class="since-stamp absolute left-5 top-8 z-10 grid h-24 w-24 place-items-center rounded-full text-center sm:left-8 sm:top-10 sm:h-28 sm:w-28">
+              <span class="font-display text-[11px] leading-5 tracking-[0.15em] text-cream/75">DESDE<br><strong class="text-3xl font-normal tracking-normal text-brass">1981</strong></span>
+            </div>
+
+            <div class="glass-panel absolute bottom-5 left-4 right-4 z-10 flex items-center gap-4 rounded-2xl p-4 sm:bottom-8 sm:left-8 sm:right-auto sm:w-[min(100%-4rem,340px)] sm:p-5">
+              <span class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brass/15 text-brass">
+                <i data-lucide="sparkles" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <span>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">Una tradición que se comparte</span>
+                <span class="mt-1 block font-display text-lg leading-snug text-cream">Mediterráneo, familia y Fenals.</span>
+              </span>
+            </div>
+          </div>
+          <div class="pointer-events-none absolute -bottom-5 -right-5 -z-10 h-36 w-36 rounded-full bg-clay/10 blur-3xl"></div>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-16 max-w-7xl border-t border-white/10 px-5 pt-5 sm:px-8 lg:px-10">
+        <div class="flex flex-col gap-3 text-xs text-cream/45 sm:flex-row sm:items-center sm:justify-between">
+          <p class="inline-flex items-center gap-2">
+            <i data-lucide="map-pin" class="h-3.5 w-3.5 text-brass" aria-hidden="true"></i>
+            Av. America, 32 · Lloret de Mar (Fenals)
+          </p>
+          <p class="tracking-[0.16em]">TRADICIÓN FAMILIAR · DESDE 1981</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sin-gluten" class="relative border-y border-white/[0.07] bg-[#101915] py-20 sm:py-24 lg:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="mb-10 max-w-3xl sm:mb-12">
+          <p class="mb-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-brass">Sense gluten · Sin gluten · Gluten free</p>
+          <h2 class="font-display text-4xl leading-tight tracking-[-0.025em] text-cream sm:text-5xl lg:text-6xl">
+            Comer sin gluten,
+            <span class="italic text-brass">con confianza.</span>
+          </h2>
+          <p class="mt-5 max-w-2xl text-sm leading-7 text-cream/65 sm:text-base">
+            La cocina sin gluten es una especialidad de Restaurant Amèrica. Queremos que disfrutes de la mesa con atención cercana, información clara y todo el sabor mediterráneo.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-12">
+          <article class="relative overflow-hidden rounded-[1.7rem] border border-white/[0.08] bg-[#18231e] p-7 sm:p-9 md:col-span-7 lg:p-11">
+            <div class="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-brass/[0.06] blur-3xl" aria-hidden="true"></div>
+            <div class="relative">
+              <span class="inline-flex items-center gap-2 rounded-full border border-brass/25 bg-brass/[0.07] px-3.5 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
+                <i data-lucide="shield-check" class="h-4 w-4" aria-hidden="true"></i>
+                Especialidad de la casa
+              </span>
+              <h3 class="mt-7 max-w-xl font-display text-3xl leading-tight text-cream sm:text-4xl">
+                El mismo placer de sentarse a la mesa.
+              </h3>
+              <p class="mt-5 max-w-xl text-sm leading-7 text-cream/65">
+                Si tienes celiaquía, alergias o intolerancias, cuéntanoslo al reservar y antes de pedir. Nuestro equipo podrá orientarte y confirmar contigo los ingredientes, las opciones disponibles y su preparación.
+              </p>
+              <a href="https://restaurantamericalloret.com/sin-gluten/" target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full border border-brass/35 px-5 py-3 text-sm font-semibold text-brass transition hover:bg-brass/10">
+                Descubrir la propuesta sin gluten
+                <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="relative min-h-[310px] overflow-hidden rounded-[1.7rem] border border-white/10 bg-forest md:col-span-5">
+            <img
+              src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&amp;fit=crop&amp;w=900&amp;q=82"
+              alt="Plato mediterráneo lleno de color, con ingredientes frescos"
+              class="absolute inset-0 h-full w-full object-cover"
+              width="900"
+              height="700"
+              loading="lazy"
+              decoding="async"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-ink/50 px-3 py-2 text-[9px] font-semibold uppercase tracking-[0.2em] text-cream backdrop-blur-md">
+                <i data-lucide="leaf" class="h-3.5 w-3.5 text-brass" aria-hidden="true"></i>
+                Cocina con atención
+              </span>
+              <p class="mt-4 font-display text-2xl leading-snug text-cream">Sabor mediterráneo, cuidado en cada detalle.</p>
+            </div>
+          </article>
+
+          <article class="soft-card rounded-[1.5rem] p-6 md:col-span-4 lg:p-7">
+            <span class="mb-5 grid h-11 w-11 place-items-center rounded-full bg-brass/10 text-brass">
+              <i data-lucide="messages-square" class="h-5 w-5" aria-hidden="true"></i>
+            </span>
+            <h3 class="font-display text-xl text-cream">Atención cercana</h3>
+            <p class="mt-2 text-sm leading-6 text-cream/60">Cuéntanos qué necesitas y te ayudaremos a consultar las opciones adecuadas.</p>
+          </article>
+
+          <article class="soft-card rounded-[1.5rem] p-6 md:col-span-4 lg:p-7">
+            <span class="mb-5 grid h-11 w-11 place-items-center rounded-full bg-brass/10 text-brass">
+              <i data-lucide="utensils" class="h-5 w-5" aria-hidden="true"></i>
+            </span>
+            <h3 class="font-display text-xl text-cream">Una carta dedicada</h3>
+            <p class="mt-2 text-sm leading-6 text-cream/60">Descubre las opciones sin gluten y consulta los platos disponibles en cada visita.</p>
+          </article>
+
+          <article class="soft-card rounded-[1.5rem] p-6 md:col-span-4 lg:p-7">
+            <span class="mb-5 grid h-11 w-11 place-items-center rounded-full bg-brass/10 text-brass">
+              <i data-lucide="heart-handshake" class="h-5 w-5" aria-hidden="true"></i>
+            </span>
+            <h3 class="font-display text-xl text-cream">Una mesa para compartir</h3>
+            <p class="mt-2 text-sm leading-6 text-cream/60">La buena cocina sabe mejor cuando todos pueden disfrutar juntos.</p>
+          </article>
+        </div>
+
+        <p class="mt-5 max-w-4xl text-xs leading-6 text-cream/40">
+          Para celiaquía o alergias, comunícalo siempre al equipo para confirmar ingredientes y medidas de preparación antes de realizar el pedido.
+        </p>
+      </div>
+    </section>
+
+    <section id="historia" class="py-20 sm:py-24 lg:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:gap-20 lg:px-10">
+        <div class="relative mx-auto w-full max-w-[560px]">
+          <div class="relative h-[390px] overflow-hidden rounded-[1.7rem] border border-white/10 bg-forest sm:h-[500px]">
+            <img
+              src="https://restaurantamericalloret.com/wp-content/uploads/2025/05/cropped-FAMILIA1-copia-scaled-1.jpg"
+              alt="La familia de Restaurant Amèrica, protagonista de su historia desde 1981"
+              class="h-full w-full object-cover object-center"
+              width="1000"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 rounded-full border border-white/20 bg-ink/65 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-cream backdrop-blur-md">
+              Fenals · Lloret de Mar
+            </div>
+          </div>
+          <div class="pointer-events-none absolute -bottom-6 -right-5 -z-10 h-40 w-40 rounded-full bg-clay/10 blur-3xl" aria-hidden="true"></div>
+        </div>
+
+        <div class="max-w-2xl">
+          <p class="mb-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-brass">Una casa familiar · Desde 1981</p>
+          <h2 class="font-display text-4xl leading-tight tracking-[-0.025em] text-cream sm:text-5xl lg:text-6xl">
+            Una historia que sigue
+            <span class="italic text-brass">en la mesa.</span>
+          </h2>
+          <p class="mt-6 text-sm leading-7 text-cream/70 sm:text-base sm:leading-8">
+            En enero de 1981, Ilde y Antonio abrieron las puertas de Restaurant Amèrica. En 2001 se unió su hija Olga y, desde entonces, generaciones de comensales han compartido aquí sus momentos.
+          </p>
+          <p class="mt-4 text-sm leading-7 text-cream/60 sm:text-base sm:leading-8">
+            Más de cuatro décadas después, seguimos en Fenals con una cocina de inspiración mediterránea, el gusto de reunir a los nuestros y la hospitalidad de una casa familiar.
+          </p>
+
+          <div class="mt-8 grid grid-cols-3 border-t border-white/10 pt-6">
+            <div class="pr-3">
+              <p class="font-display text-2xl text-brass sm:text-3xl">1981</p>
+              <p class="mt-1 text-[10px] leading-5 text-cream/45 sm:text-xs">Año de apertura</p>
+            </div>
+            <div class="border-l border-white/10 px-3 sm:px-5">
+              <p class="font-display text-2xl text-brass sm:text-3xl">Fenals</p>
+              <p class="mt-1 text-[10px] leading-5 text-cream/45 sm:text-xs">Nuestra casa</p>
+            </div>
+            <div class="border-l border-white/10 pl-3 sm:pl-5">
+              <p class="font-display text-2xl text-brass sm:text-3xl">Familia</p>
+              <p class="mt-1 text-[10px] leading-5 text-cream/45 sm:text-xs">Nuestra historia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="border-y border-white/[0.07] bg-[#101915] py-20 sm:py-24 lg:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-3xl">
+            <p class="mb-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-brass">Una muestra de nuestra cocina</p>
+            <h2 class="font-display text-4xl leading-tight tracking-[-0.025em] text-cream sm:text-5xl lg:text-6xl">
+              La carta, con sabor
+              <span class="italic text-brass">a Mediterráneo.</span>
+            </h2>
+            <p class="mt-5 max-w-2xl text-sm leading-7 text-cream/60 sm:text-base">
+              Clásicos para compartir, platos del mar y opciones sin gluten. Explora algunos favoritos y consulta la carta completa para ver disponibilidad e ingredientes.
+            </p>
+          </div>
+
+          <a href="https://restaurantamericalloret.com/carta_/" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 shrink-0 items-center gap-2 self-start rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-cream transition hover:border-brass/60 hover:text-brass lg:self-auto">
+            Ver carta completa
+            <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="mt-9 flex flex-wrap gap-2.5" role="tablist" aria-label="Categorías de la carta">
+          <button id="tab-entrantes" type="button" role="tab" aria-selected="true" aria-controls="panel-entrantes" data-tab="entrantes" class="menu-tab min-h-11 rounded-full px-5 py-3 text-xs font-semibold sm:text-sm">
+            Para empezar
+          </button>
+          <button id="tab-principales" type="button" role="tab" aria-selected="false" aria-controls="panel-principales" data-tab="principales" class="menu-tab min-h-11 rounded-full px-5 py-3 text-xs font-semibold sm:text-sm">
+            Mar y Mediterráneo
+          </button>
+          <button id="tab-sin-gluten" type="button" role="tab" aria-selected="false" aria-controls="panel-sin-gluten" data-tab="sin-gluten" class="menu-tab min-h-11 rounded-full px-5 py-3 text-xs font-semibold sm:text-sm">
+            Sin gluten
+          </button>
+        </div>
+
+        <div class="mt-7">
+          <div id="panel-entrantes" class="menu-panel" role="tabpanel" aria-labelledby="tab-entrantes" tabindex="0">
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Selección de platos para compartir en una mesa mediterránea" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Para compartir</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Tapas para empezar</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Clásicos para abrir el apetito y disfrutar alrededor de la mesa.</p>
+                </div>
+              </article>
+
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Plato de marisco preparado al estilo mediterráneo" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Sabor de costa</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Mejillones</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Al vapor o a la marinera: dos formas de saborear el Mediterráneo.</p>
+                </div>
+              </article>
+
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Plato de cocina mediterránea con ingredientes frescos" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">De la casa</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Sepia con almejas</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Una combinación del mar con todo el carácter de la cocina mediterránea.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div id="panel-principales" class="menu-panel" role="tabpanel" aria-labelledby="tab-principales" tabindex="0" hidden>
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Arroz preparado para compartir, inspirado en la cocina mediterránea" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Un clásico</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Paella marinera</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Arroz elaborado al momento, con sabores que vienen del mar.</p>
+                </div>
+              </article>
+
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Plato principal de inspiración mediterránea servido en mesa" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Sabor intenso</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Arroz negro con chipirones</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Un clásico mediterráneo para disfrutar sin prisa y en buena compañía.</p>
+                </div>
+              </article>
+
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Pescado servido con una guarnición fresca" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Del mar</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Lubina al Chardonnay</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Una propuesta de pescado para saborear la cocina de la Costa Brava.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div id="panel-sin-gluten" class="menu-panel" role="tabpanel" aria-labelledby="tab-sin-gluten" tabindex="0" hidden>
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Pizza horneada, fotografía ilustrativa de la propuesta sin gluten" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Gluten free</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Pizzas sin gluten</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Una de las opciones de nuestra carta adaptada. Pregunta por sabores y disponibilidad.</p>
+                </div>
+              </article>
+
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Plato fresco de inspiración mediterránea" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Sense gluten</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Una carta dedicada</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Consulta nuestra selección sin gluten y las opciones disponibles para tu visita.</p>
+                </div>
+              </article>
+
+              <article class="menu-card group overflow-hidden rounded-[1.5rem] border border-white/[0.08] bg-[#17221D]">
+                <div class="relative h-56 overflow-hidden bg-forest">
+                  <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=850&amp;q=82" alt="Mesa con distintos platos para compartir" class="h-full w-full object-cover" width="850" height="560" loading="lazy" decoding="async">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+                  <span class="absolute bottom-4 left-5 rounded-full border border-white/20 bg-ink/60 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cream backdrop-blur-sm">Atención personal</span>
+                </div>
+                <div class="p-5 sm:p-6">
+                  <h3 class="font-display text-xl text-cream">Celiaquía e intolerancias</h3>
+                  <p class="mt-2 text-sm leading-6 text-cream/55">Avísanos para que el equipo pueda orientarte sobre ingredientes y preparación.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-7 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p class="max-w-3xl text-xs leading-6 text-cream/45">
+            La carta y la disponibilidad pueden variar. Si tienes celiaquía o alergias, consulta los ingredientes y la preparación con el equipo.
+          </p>
+          <a href="https://restaurantamericalloret.com/sin-gluten/" target="_blank" rel="noopener noreferrer" class="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-brass transition hover:text-cream">
+            Carta sin gluten
+            <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-20 sm:py-24 lg:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <div class="mb-10 max-w-3xl sm:mb-12">
+          <p class="mb-4 text-[10px] font-semibold uppercase tracking-[0.24em] text-brass">Ven a vernos</p>
+          <h2 class="font-display text-4xl leading-tight tracking-[-0.025em] text-cream sm:text-5xl lg:text-6xl">
+            Tu mesa te espera
+            <span class="italic text-brass">en Fenals.</span>
+          </h2>
+          <p class="mt-5 max-w-2xl text-sm leading-7 text-cream/60 sm:text-base">
+            Estamos en Lloret de Mar, a un paso del Mediterráneo. Llámanos para reservar, consultar el horario o hablar sobre opciones sin gluten.
+          </p>
+        </div>
+
+        <div class="grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
+          <div class="contact-map relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-[1.7rem] border border-white/10 p-6 sm:min-h-[440px] sm:p-8">
+            <svg class="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <path class="map-path" d="M-30 105 C90 130 78 230 182 229 S280 132 345 181 438 302 625 280"></path>
+              <path class="map-path" d="M-40 362 C80 326 119 420 227 383 S342 318 423 363 510 449 640 410"></path>
+              <path class="map-path" d="M126 -30 C135 68 230 82 221 161 S177 260 228 315 354 393 325 535"></path>
+              <path class="map-path" d="M485 -20 C423 77 455 139 409 208 S346 288 396 348 492 414 470 540"></path>
+            </svg>
+            <div class="relative z-10">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-ink/50 px-3.5 py-2 text-[9px] font-semibold uppercase tracking-[0.19em] text-cream/80 backdrop-blur">
+                <i data-lucide="map-pin" class="h-3.5 w-3.5 text-brass" aria-hidden="true"></i>
+                Lloret de Mar · Fenals
+              </span>
+            </div>
+            <div class="relative z-10">
+              <span class="mb-4 grid h-14 w-14 place-items-center rounded-full border border-brass/35 bg-ink/65 text-brass shadow-lg backdrop-blur">
+                <i data-lucide="map-pin" class="h-6 w-6" aria-hidden="true"></i>
+              </span>
+              <p class="font-display text-3xl text-cream sm:text-4xl">Av. America, 32</p>
+              <p class="mt-2 text-sm text-cream/60">Lloret de Mar · Fenals</p>
+              <a href="https://maps.app.goo.gl/fqy81naM8esG8LYB8" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex min-h-12 items-center gap-2 rounded-full bg-brass px-5 py-3 text-sm font-semibold text-ink transition hover:bg-cream">
+                Cómo llegar
+                <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <a href="tel:+34972366417" class="soft-card group flex min-h-[190px] flex-col justify-between rounded-[1.5rem] p-6 transition hover:border-brass/30 sm:p-7">
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-brass/10 text-brass transition group-hover:bg-brass/15">
+                <i data-lucide="phone" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <span>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.18em] text-cream/45">Reservas y consultas</span>
+                <span class="mt-2 block font-display text-xl text-cream">+34 972 36 64 17</span>
+                <span class="mt-2 inline-flex items-center gap-1.5 text-xs text-brass">Llamar ahora <i data-lucide="arrow-up-right" class="h-3.5 w-3.5" aria-hidden="true"></i></span>
+              </span>
+            </a>
+
+            <a href="/cdn-cgi/l/email-protection#721b1c141d3200170106130700131c06131f17001b11131e1e1d0017065c111d1f4d010710181711064f2017011700041357404220170106130700131c06574042331f57314157334a001b1113" class="soft-card group flex min-h-[190px] flex-col justify-between rounded-[1.5rem] p-6 transition hover:border-brass/30 sm:p-7">
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-brass/10 text-brass transition group-hover:bg-brass/15">
+                <i data-lucide="mail" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <span>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.18em] text-cream/45">Escríbenos</span>
+                <span class="mt-2 block break-all font-display text-lg text-cream"><span class="__cf_email__" data-cfemail="21484f474e6153445255405453404f55404c44534842404d4d4e5344550f424e4c">[email&#160;protected]</span></span>
+                <span class="mt-2 inline-flex items-center gap-1.5 text-xs text-brass">Enviar un correo <i data-lucide="arrow-up-right" class="h-3.5 w-3.5" aria-hidden="true"></i></span>
+              </span>
+            </a>
+
+            <div class="soft-card flex min-h-[190px] flex-col justify-between rounded-[1.5rem] p-6 sm:p-7">
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-brass/10 text-brass">
+                <i data-lucide="clock-3" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <span>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.18em] text-cream/45">Horario habitual</span>
+                <span class="mt-2 block font-display text-xl text-cream">Todos los días</span>
+                <span class="mt-1 block text-sm text-cream/70">09:00–23:00</span>
+                <span class="mt-2 block text-[10px] leading-5 text-cream/40">Puede variar según temporada; confirma por teléfono.</span>
+              </span>
+            </div>
+
+            <div class="soft-card flex min-h-[190px] flex-col justify-between rounded-[1.5rem] p-6 sm:p-7">
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-brass/10 text-brass">
+                <i data-lucide="heart-handshake" class="h-5 w-5" aria-hidden="true"></i>
+              </span>
+              <span>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.18em] text-cream/45">Especialidad</span>
+                <span class="mt-2 block font-display text-xl text-cream">Sin gluten</span>
+                <span class="mt-2 block text-sm leading-6 text-cream/55">Cuéntanos tus necesidades al reservar y antes de pedir.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-[#080E0C] pb-24 md:pb-8">
+    <div class="mx-auto max-w-7xl px-5 pb-8 pt-12 sm:px-8 sm:pt-14 lg:px-10">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.25fr_0.75fr_1fr]">
+        <div>
+          <a href="#inicio" class="inline-flex items-center gap-3" aria-label="Restaurant Amèrica, volver al inicio">
+            <span class="grid h-11 w-11 place-items-center rounded-full border border-brass/40 bg-brass/10 font-display text-2xl italic text-brass" aria-hidden="true">A</span>
+            <span>
+              <span class="block font-display text-lg text-cream">Restaurant <span class="italic text-brass">Amèrica</span></span>
+              <span class="mt-1 block text-[9px] font-semibold tracking-[0.2em] text-cream/45">FENALS · LLORET DE MAR</span>
+            </span>
+          </a>
+          <p class="mt-5 max-w-sm text-sm leading-7 text-cream/50">
+            Cocina mediterránea, tradición familiar y especialidad sin gluten. Recibiéndote en Fenals desde 1981.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/45">Explora</h2>
+          <nav class="mt-4 grid gap-3 text-sm text-cream/70" aria-label="Enlaces del pie de página">
+            <a href="#menu" class="transition hover:text-brass">La carta</a>
+            <a href="#sin-gluten" class="transition hover:text-brass">Sin gluten</a>
+            <a href="#historia" class="transition hover:text-brass">Nuestra historia</a>
+            <a href="#contacto" class="transition hover:text-brass">Contacto y ubicación</a>
+          </nav>
+        </div>
+
+        <div>
+          <h2 class="text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/45">Conecta con nosotros</h2>
+          <div class="mt-4 grid gap-3 text-sm">
+            <a href="https://www.instagram.com/restaurant.america/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 text-cream/70 transition hover:text-brass" aria-label="Instagram de Restaurant Amèrica, restaurant.america">
+              <i data-lucide="at-sign" class="h-4 w-4 text-brass" aria-hidden="true"></i>
+              Instagram · @restaurant.america
+              <i data-lucide="arrow-up-right" class="h-3.5 w-3.5" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/search/top/?q=Restaurant%20Am%C3%A8rica%20Lloret%20de%20Mar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 text-cream/70 transition hover:text-brass" aria-label="Buscar Restaurant Amèrica en Facebook">
+              <i data-lucide="share-2" class="h-4 w-4 text-brass" aria-hidden="true"></i>
+              Buscar en Facebook
+              <i data-lucide="arrow-up-right" class="h-3.5 w-3.5" aria-hidden="true"></i>
+            </a>
+            <a href="tel:+34972366417" class="mt-1 inline-flex items-center gap-2.5 text-cream/70 transition hover:text-brass">
+              <i data-lucide="phone" class="h-4 w-4 text-brass" aria-hidden="true"></i>
+              +34 972 36 64 17
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-5 text-[10px] text-cream/35 sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="current-year">2026</span> Restaurant Amèrica. Desde 1981 en Fenals.</p>
+        <a href="#inicio" class="inline-flex items-center gap-1.5 transition hover:text-brass">Volver arriba <i data-lucide="arrow-up" class="h-3.5 w-3.5" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-quick-actions fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-ink/95 px-4 pb-3 pt-3 backdrop-blur-xl md:hidden" aria-label="Acciones rápidas">
+    <div class="mx-auto flex max-w-lg gap-3">
+      <a href="tel:+34972366417" class="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full bg-brass px-4 py-3 text-sm font-semibold text-ink">
+        <i data-lucide="phone" class="h-4 w-4" aria-hidden="true"></i>
+        Llamar
+      </a>
+      <a href="https://maps.app.goo.gl/fqy81naM8esG8LYB8" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full border border-white/15 px-4 py-3 text-sm font-semibold text-cream">
+        <i data-lucide="map-pin" class="h-4 w-4 text-brass" aria-hidden="true"></i>
+        Cómo llegar
+      </a>
+    </div>
+  </nav>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    (() => {
+      const header = document.getElementById("site-header");
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuOpenIcon = document.querySelector(".menu-open-icon");
+      const menuCloseIcon = document.querySelector(".menu-close-icon");
+
+      if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons({
+          attrs: {
+            "stroke-width": 1.7,
+            "stroke-linecap": "round",
+            "stroke-linejoin": "round"
+          }
+        });
+      }
+
+      const setMenuOpen = (isOpen) => {
+        mobileMenu.classList.toggle("hidden", !isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+        menuOpenIcon.classList.toggle("hidden", isOpen);
+        menuCloseIcon.classList.toggle("hidden", !isOpen);
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        setMenuOpen(!isOpen);
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenuOpen(false));
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+          setMenuOpen(false);
+          menuToggle.focus();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768 && menuToggle.getAttribute("aria-expanded") === "true") {
+          setMenuOpen(false);
+        }
+      });
+
+      const updateHeader = () => {
+        header.classList.toggle("is-scrolled", window.scrollY > 8);
+      };
+      updateHeader();
+      window.addEventListener("scroll", updateHeader, { passive: true });
+
+      const tabs = Array.from(document.querySelectorAll('[role="tab"][data-tab]'));
+      const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+
+      const activateTab = (selectedTab, moveFocus = false) => {
+        const selectedName = selectedTab.dataset.tab;
+
+        tabs.forEach((tab) => {
+          const isSelected = tab === selectedTab;
+          tab.setAttribute("aria-selected", String(isSelected));
+          tab.tabIndex = isSelected ? 0 : -1;
+        });
+
+        panels.forEach((panel) => {
+          panel.hidden = panel.id !== `panel-${selectedName}`;
+        });
+
+        if (moveFocus) selectedTab.focus();
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => activateTab(tab));
+
+        tab.addEventListener("keydown", (event) => {
+          let nextIndex = index;
+
+          if (event.key === "ArrowRight") nextIndex = (index + 1) % tabs.length;
+          else if (event.key === "ArrowLeft") nextIndex = (index - 1 + tabs.length) % tabs.length;
+          else if (event.key === "Home") nextIndex = 0;
+          else if (event.key === "End") nextIndex = tabs.length - 1;
+          else return;
+
+          event.preventDefault();
+          activateTab(tabs[nextIndex], true);
+        });
+      });
+
+      const year = document.getElementById("current-year");
+      if (year) year.textContent = String(new Date().getFullYear());
+    })();
+  </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4455ed45d70e27e',t:'MTc5MDk2MTU0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
